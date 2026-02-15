@@ -6,5 +6,5 @@ using namespace std;
 void print(string s);
 
 
-string get_statistics(int n);
+string get_statistics(int push_up, int push_up_per_day, int day);
 string get_pushups(int push_up, int push_up_per_day, int day);

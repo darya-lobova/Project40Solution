@@ -20,3 +20,16 @@ string get_pushups(int push_up, int push_up_per_day, int day) {
 
 	return result;
 }
+
+string get_statistics(int push_up, int push_up_per_day, int day) {
+	
+	string result;
+	int last_day = push_up_per_day * (day - 1) + push_up;
+	int total_push_up = ((push_up + last_day) / 2) * day;
+
+	for (int i = 1; i <= day; i++) {
+		result = "Total push ups: " + to_string(total_push_up);
+	}
+
+	return result;
+}

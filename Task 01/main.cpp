@@ -15,10 +15,13 @@ int main() {
 	cout << "How many days do you want to do that? ";
 	cin >> day;
 
-	string result = get_pushups(push_up, push_up_per_day, day);
+	string result1 = get_pushups(push_up, push_up_per_day, day);
 
-	cout << "Here's your plan: \n";
-	print(result);
+	cout << "****************************\nHere's your plan: \n";
+	print(result1);
+
+	string result2 = get_statistics(push_up, push_up_per_day, day);
+	print(result2);
 
 	return 0;
 }
