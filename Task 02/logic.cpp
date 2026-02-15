@@ -12,7 +12,7 @@ string get_fibo_number(int number) {
 
 	string result = to_string(first);
 
-	for (int i = 0; i < number; i++) {
+	for (; second < number;) {
 		result += " " + to_string(second);
 		next = first + second;
 		first = second;

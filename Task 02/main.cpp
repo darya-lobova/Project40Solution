@@ -7,7 +7,7 @@ int main() {
 	cout << "Input number: ";
 	cin >> number;
 
-string result = get_fibo_number(number);
+	string result = get_fibo_number(number);
 
 	print(result);
 
