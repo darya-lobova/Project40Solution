@@ -10,11 +10,11 @@ string get_pushups(int push_up, int push_up_per_day, int day) {
 		return "Error.";
 	}
 
-	string result = "Day ";
-	int total_push_up = push_up + push_up_per_day;
+	string result;
+	int total_push_up = push_up;
 
 	for (int i = 1; i <= day; i++) {
-		result += to_string(i) + ": " + to_string(total_push_up) + "\n";
+		result += "Day " + to_string(i) + ": " + to_string(total_push_up) + "\n";
 		total_push_up += push_up_per_day;
 	}
 
